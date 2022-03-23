@@ -36,7 +36,7 @@ public class personaje {
         this.peso = peso;}
 
     public void comer(){
-        System.out.println("coiendo");
+        System.out.println("comiendo");
     }
     public void  dormir (){
         System.out.println("durmiendo");
