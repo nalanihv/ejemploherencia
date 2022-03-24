@@ -10,6 +10,7 @@ public class personaje {
     //dormir
     //pensar
 
+
     public personaje( String nombre, double estatura, double peso) {
         this.nombre = nombre;
         this.estatura = estatura;
