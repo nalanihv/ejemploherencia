@@ -29,7 +29,6 @@ public class monstruo extends personaje {
     trabajar
     hacer_reir
      */
-
     public boolean isTienecuernos() {
         return tienecuernos;
     }
@@ -54,21 +53,16 @@ public class monstruo extends personaje {
         this.color = color;
     }
 
-    public ArrayList<String> getHabilidades() {
-        return habilidades;
-    }
+    public ArrayList<String> getHabilidades() {return habilidades;}
 
-    public void setHabilidades(  ArrayList<String> habilidades) {
-        this.habilidades = habilidades;
-    }
+    public void setHabilidades(ArrayList<String> habilidades) {this.habilidades = habilidades;}
 
-    public monstruo(boolean tienecuernos, boolean tienetentaculos, String color, ArrayList<String> habilidades) {
+    public monstruo(String nombre, double estatura, double peso, boolean tienecuernos, boolean tienetentaculos, String color, ArrayList<String> habilidades) {
+        super(nombre, estatura, peso);
         this.tienecuernos = tienecuernos;
         this.tienetentaculos = tienetentaculos;
         this.color = color;
         this.habilidades = habilidades;
-        System.out.println("soy el contructor de moustro");
+        System.out.println("soy el constructor de moustro");
     }
-
-
 }
