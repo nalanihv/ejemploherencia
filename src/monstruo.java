@@ -1,5 +1,7 @@
 //extends nombre_clase_padre
 
+import java.util.ArrayList;
+
 public class monstruo extends personaje {
     //atributos:
     /* cuernos
@@ -9,7 +11,7 @@ public class monstruo extends personaje {
     private boolean tienecuernos;
     private boolean tienetentaculos;
     private String color;
-    private arraylist<String> habilidades;
+    private ArrayList<String>habilidades;
     public monstruo(String nombre, double estatura, double peso) {
         super(nombre, estatura, peso);
     }
@@ -52,20 +54,21 @@ public class monstruo extends personaje {
         this.color = color;
     }
 
-    public arraylist<String> getHabilidades() {
+    public ArrayList<String> getHabilidades() {
         return habilidades;
     }
 
-    public void setHabilidades(arraylist<String> habilidades) {
+    public void setHabilidades(  ArrayList<String> habilidades) {
         this.habilidades = habilidades;
     }
 
-    public monstruo(String nombre, double estatura, double peso, boolean tienecuernos, boolean tienetentaculos, String color, arraylist<String> habilidades) {
-        super(nombre, estatura, peso);
+    public monstruo(boolean tienecuernos, boolean tienetentaculos, String color, ArrayList<String> habilidades) {
         this.tienecuernos = tienecuernos;
         this.tienetentaculos = tienetentaculos;
         this.color = color;
         this.habilidades = habilidades;
         System.out.println("soy el contructor de moustro");
     }
+
+
 }
